@@ -1,0 +1,191 @@
+* { 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+  border: 0;
+}
+@font-face {
+    font-family: "tt-lake";
+    src: url(fonts/TTLakes-Regular.ttf);
+}
+
+@font-face {
+    font-family: "tt-lake-bold";
+    src: url(fonts/TTLakes-Bold.ttf);
+}
+
+.page-content {
+    padding: 1rem;
+    line-height: 3rem;
+    font-family: tt-lake;
+    font-weight: 800;
+    gap: 1rem;
+}
+.page-content h2 {
+    margin: 2rem 0;
+}
+.page-content p {
+    margin: 1rem 0;
+}
+
+/* Сначала Я сделал общий дизайн для всех розовых кнопок */
+.pink-button {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 1.25rem;
+    border: none;
+    background-color: #ff3e79;
+    transition: all 0.15s ease-in-out;
+
+}
+
+.pink-button img {
+    width: 45%;
+    height: 40%;
+}
+
+.pink-button:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.pink-button:active {
+    opacity: 0.9;
+    transform: scale(1.2);
+}
+
+.logo-link {
+  width: 6rem;
+  height: 3.125rem;
+  background-image: url(images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Затем Я сотворил дизайн для всех элементов из списка меню */
+.menu-item {
+    font-family: tt-lake;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1B1C21;
+    line-height: 1.5rem;
+    letter-spacing: -0.013rem;
+    text-decoration: none;
+    height: 3rem;
+    align-content: center;
+    padding-left: 1.5rem;
+    transition: all 0.3s linear;
+}
+
+.menu-item:hover {
+    background-color: #41F6D7;
+}
+
+.menu-item.current {
+    color: #7E7E82;
+    background-image: url(img/highlight.svg);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+.current:hover {
+    background-position: 0 center;
+}
+
+/* Дополнительные стили для контактной информации */
+.contacts {
+    font-family: tt-lake;
+    /* font-size: 1rem; */
+    /* font-weight: 550; */
+    color: #1B1C21;
+    /* line-height: 1.5rem; */
+    letter-spacing: -0.013rem;
+}
+
+.contacts a {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #1B1C21;
+    text-decoration: none;
+}
+
+.contacts p {
+    font-family: tt-lake-bold;
+    font-weight: 900;
+    font-size: 1.5rem
+}
+
+.lang-select {
+    font-family: tt-lake;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1B1C21;
+    line-height: 1.5rem;
+    letter-spacing: -0.013rem;
+    text-decoration: none;
+}
+
+.lang-select.current {
+    color: #7E7E82;
+}
+
+/* Затем я создал стили для контейнеров. */
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.search-button {
+    justify-self: flex-end;
+    margin-left: auto;
+}
+
+.menu-item__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: content-box;
+}
+
+.sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    /* justify-self: flex-end; */
+    margin-top: auto;
+    padding: 1.5rem;
+}
+
+.additional-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 1rem 0;
+}
+
+.lang-select__container {
+    margin: 1rem 0;
+}
