@@ -145,6 +145,7 @@
     width: 20rem;
     height: 100vh;
     background-color: #ffffff;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar-header {
