@@ -93,10 +93,7 @@
 /* Дополнительные стили для контактной информации */
 .contacts {
     font-family: tt-lake;
-    /* font-size: 1rem; */
-    /* font-weight: 550; */
     color: #1B1C21;
-    /* line-height: 1.5rem; */
     letter-spacing: -0.013rem;
 }
 
@@ -171,7 +168,6 @@
 .sidebar-footer {
     display: flex;
     flex-direction: column;
-    /* justify-self: flex-end; */
     margin-top: auto;
     padding: 1.5rem;
 }
